@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-slate-100 antialiased selection:bg-brand-orange selection:text-white;
+    margin: 0;
+    min-height: 100vh;
+    -webkit-tap-highlight-color: transparent; /* Remove white flash on mobile taps */
+    background: radial-gradient(circle at 50% -10%, #1b1310 0%, #0c0c0d 60%, #060607 100%);
+    background-attachment: fixed;
+  }
+
+  /* Reset jarring browser default focus borders on active click */
+  *:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Beautiful theme-aligned keyboard focus ring for accessibility */
+  *:focus-visible {
+    outline: 2px solid theme('colors.brand.orange') !important;
+    outline-offset: 2px !important;
+  }
+
+  /* Sleek orange glow for focused prompt bar and inputs */
+  input:focus, textarea:focus, select:focus {
+    @apply border-brand-orange/40 !important;
+    box-shadow: 0 0 0 3px rgba(255, 126, 51, 0.15) !important;
+  }
+
+  /* Premium Glassmorphism Cards */
+  .premium-glass-card {
+    position: relative;
+    background: rgba(20, 20, 22, 0.55) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    border: 1px solid rgba(255, 126, 51, 0.08) !important;
+    transition: border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .premium-glass-card:hover {
+    border-color: rgba(255, 126, 51, 0.25) !important;
+    box-shadow: 0 12px 30px -10px rgba(255, 126, 51, 0.12), 0 1px 1px 0 rgba(255, 126, 51, 0.05) !important;
+  }
+}
