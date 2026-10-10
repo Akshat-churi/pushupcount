@@ -22,17 +22,17 @@ const Home = () => {
           <Link to="/instructions/pushups" className="group">
             <div className="relative overflow-hidden rounded-2xl premium-glass-card p-7 transform hover:-translate-y-1">
               <div className="absolute top-0 right-0 p-6 opacity-[0.02] group-hover:opacity-[0.05] transition-opacity">
-                <Activity className="w-24 h-24 text-brand-orange" />
+                <Activity className="w-24 h-24 text-yellow-400" />
               </div>
               <div className="relative z-10 text-left space-y-4">
-                <div className="w-9 h-9 rounded-xl bg-brand-orange/10 flex items-center justify-center border border-brand-orange/20">
-                  <Activity className="w-5 h-5 text-brand-orange" />
+                <div className="w-9 h-9 rounded-xl bg-yellow-400/10 flex items-center justify-center border border-yellow-400/20">
+                  <Activity className="w-5 h-5 text-yellow-400" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-1.5">Push-ups</h3>
                   <p className="text-slate-400 text-sm leading-relaxed">Master your form with real-time elbow angle tracking.</p>
                 </div>
-                <div className="flex items-center text-brand-orange font-semibold text-sm">
+                <div className="flex items-center text-yellow-400 font-semibold text-sm">
                   Start Session <ArrowRight className="ml-1.5 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
               </div>
